@@ -13,4 +13,5 @@ app.listen(PORT, () => {
 //app.listen(PORT, () => console.log(`Listening on port http://localhost:${PORT}/`));
 
 console.log("Test");
-console.log("From mac")
+console.log("From mac");
+console.log(12);
