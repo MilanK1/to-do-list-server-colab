@@ -11,3 +11,6 @@ routes(app);
 app.listen(PORT, () => {
 });
 //app.listen(PORT, () => console.log(`Listening on port http://localhost:${PORT}/`));
+console.log("How are you doing?")
+
+console.log(123)
