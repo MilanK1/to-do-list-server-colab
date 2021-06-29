@@ -6,3 +6,4 @@ let router = Router();
 router.get("/", home);
 
 export default router;
+
