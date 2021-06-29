@@ -1,9 +1,12 @@
 import express from "express";
 import routes from "./modules/core/routes.js";
 import dbconnect from "./db/dbconnect.js";
-
-const app = express();
+import morgan from 'morgan'
 const PORT = 8001;
+const app = express();
+//logger
+app.use(morgan("dev"))
+
 //Connecting the db server
 dbconnect(app);
 //All the routes
