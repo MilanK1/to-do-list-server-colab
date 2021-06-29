@@ -1,8 +1,8 @@
 import { Router } from "express";
-import info from "./info.js";
+import home from "./home.js";
 
 let router = Router();
 
-router.get("/", info);
+router.get("/", home);
 
 export default router;
