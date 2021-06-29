@@ -1,5 +1,4 @@
 import express from "express";
-import home from "./home/home.js";
 import routes from "./modules/core/routes.js";
 import dbconnect from "./db/dbconnect.js";
 
