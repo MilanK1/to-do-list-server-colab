@@ -6,13 +6,8 @@ const userSchema = new Schema({
   inputValue: {
     type: String,
     required: true,
-    unique: true
+    unique: false
   },
-  _id: {
-    type: String,
-    required: false,
-    unique: true
-  }
 });
 
 export default mongoose.model("User", userSchema);

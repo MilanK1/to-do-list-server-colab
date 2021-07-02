@@ -13,12 +13,14 @@ const app = express();
 app.use(morgan("dev"));
 //Connecting the db server
 dbconnect(app);
-//All the routes
-routes(app);
-//Cores
-cors(app);
 //body parser
 parseResponse(app);
+//Cores
+cors(app);
+//All the routes
+routes(app);
+
+
 app.listen(PORT, () =>
   console.log(`Listening on port http://localhost:${PORT}/`)
 );
