@@ -3,11 +3,11 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-  inputValue: {
+  text: {
     type: String,
-    required: true,
+    required: false,
     unique: false
-  },
+  }
 });
 
 export default mongoose.model("User", userSchema);

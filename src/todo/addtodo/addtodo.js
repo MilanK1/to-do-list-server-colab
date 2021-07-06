@@ -4,7 +4,7 @@ import axios from "axios";
 export default function AddToDo(req, res) {
   console.log("POSTREQ:", req.body);
   const newUser = new User({
-    inputValue: req.body.inputValue
+    text: req.body.text
   });
   newUser
     .save()

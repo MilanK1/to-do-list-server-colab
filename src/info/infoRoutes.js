@@ -3,6 +3,6 @@ import info from "./info.js";
 
 let router = Router();
 
-router.get("/info", info);
+router.get("/", info);
 
 export default router;
